@@ -4,6 +4,8 @@
 2. Make sure you have node and npm installed  
 3. Install all dependencies:   
    `$ npm i`   
+4. Compile the less;   
+   `npm run less`
 4. To serve the code, run the server with or without nodemon;   
    `$ npm run dev`   
    `$ npm start`  
