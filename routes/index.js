@@ -1,19 +1,25 @@
 const router = require('express').Router();
 
+var data = {};
+
 router.get('/', function (req, res) {
-  res.send('Home');
+  data.title = 'Home';
+  res.render('pages/home.ejs', data);
 });
 
 router.get('/about', function (req, res) {
-  res.send('About');
+  data.title = 'About';
+  res.render('pages/home.ejs', data);
 });
 
 router.get('/work', function (req, res) {
-  res.send('Work');
+  data.title = 'Work';
+  res.render('pages/home.ejs', data);
 });
 
 router.get('/contact', function (req, res) {
-  res.send('Contact');
+  data.title = 'Contact';
+  res.render('pages/home.ejs', data);
 });
 
 module.exports = router;
